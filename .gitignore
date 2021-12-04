@@ -12,3 +12,5 @@
 *.pdf
 *.out
 *.xmpi
+
+!main.pdf
