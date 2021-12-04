@@ -12,5 +12,6 @@
 *.pdf
 *.out
 *.xmpi
+.DS_Store
 
 !main.pdf

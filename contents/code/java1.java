@@ -1,0 +1,9 @@
+public class Curso {
+    ...
+    private HashMap<String, Alumno> alumnos;
+    ...
+
+    public HashMap<String, Alumno> getAlumnos() {
+        ...
+    }
+}

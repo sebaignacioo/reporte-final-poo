@@ -70,15 +70,25 @@ Para el manejo de los archivos de texto en donde se almacenan los datos, se util
     \label{fig:img3}
 \end{figure}
 
+\clearpage
+
 \subsection{Todos los atributos de todas las clases deben ser privados y poseer sus respectivos métodos de lectura y escritura (getter y setter)}
 
-Bla bla \hyperref[subsec:blablabla]{Bla}\dots
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{contents/img/img7}
+    \caption{Atributos, setters y getters}
+    \label{fig:img7}
+\end{figure}
+
+Como podemos ver en la \textbf{\hyperref[fig:img7]{figura indicada}}, los atributos de las clases del dominio son todos privados, y tienen definidos sus respectivos \textbf{setter} y \textbf{getter}.
 
 \subsection{Se deben incluir datos iniciales dentro del código}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et sem luctus, finibus mauris eget, euismod arcu. Morbi at mollis risus. Praesent consequat justo tellus, ac pretium urna lacinia quis. Ut sagittis cursus finibus. Morbi pellentesque vulputate tincidunt. Aliquam at pretium tellus, et vehicula velit. Nunc turpis metus, porttitor sit amet aliquam ut, venenatis quis elit. Nam tincidunt venenatis tortor, ac sodales libero varius nec. Donec vestibulum leo a metus rutrum, vitae elementum diam suscipit. Quisque non mauris rutrum, lacinia lectus id, viverra dui. In leo quam, ultrices vitae suscipit quis, porttitor quis turpis. Vestibulum semper ligula sit amet diam scelerisque gravida.
+Los datos iniciales fueron creados utilizando la librería \textit{Faker}, disponible asociandola al proyecto \textbf{maven}. Los datos iniciales son los mismos, tanto en el archivo plano (CSV) como en la base de datos MySQL. Los datos ya vienen almacenados en sus respectivas carpetas, en el caso de los archivos planos, estos ya están vinculados a la aplicación mediante las clases Datafile (a revisar con más profundidad \textbf{\hyperref[opc:leerdesdebd]{en la próxima sección}}).
 
 \subsection*{Opcional: Leer datos desde archivo/base de datos}
 \addcontentsline{toc}{subsection}{Opcional: Leer datos desde archivo/base de datos}
+\label{opc:leerdesdebd}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et sem luctus, finibus mauris eget, euismod arcu. Morbi at mollis risus. Praesent consequat justo tellus, ac pretium urna lacinia quis. Ut sagittis cursus finibus. Morbi pellentesque vulputate tincidunt. Aliquam at pretium tellus, et vehicula velit. Nunc turpis metus, porttitor sit amet aliquam ut, venenatis quis elit. Nam tincidunt venenatis tortor, ac sodales libero varius nec. Donec vestibulum leo a metus rutrum, vitae elementum diam suscipit. Quisque non mauris rutrum, lacinia lectus id, viverra dui. In leo quam, ultrices vitae suscipit quis, porttitor quis turpis. Vestibulum semper ligula sit amet diam scelerisque gravida.
+Como se verá \textbf{\hyperref[opc:leerdesdebd]{más adelante}}, el programa desarrollado tiene la capacidad de utilizar tanto los datos locales, almacenados como CSV, o conectándose a una base de datos MySQL (o MariaDB). La independencia de la solución respecto al origen de los datos es gracias a la utilización del patrón de diseño \textit{Strategy}, que permite generar una interfaz con métodos genéricos al origen de datos, retornando siempre los datos siguiendo los principios de POO y del diseño de clases del software.

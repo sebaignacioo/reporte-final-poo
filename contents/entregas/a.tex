@@ -6,22 +6,46 @@
 \setcounter{subsection}{1}
 \subsection{Menú con funcionalidades de edición y eliminación de elementos}
 
-El menú generado también nos permite editar y eliminar datos relacionados a los Cursos y los Alumnos. Específicamente, se puede:
+A través del menú en la interfaz de consola de comandos (CLI), también nos permite editar y eliminar datos relacionados a los Cursos y los Alumnos. Específicamente, se puede:
 
 \begin{itemize}
     \item Editar o eliminar alumnos: Se pueden modificar los datos del alumno (exceptuando el RUT). No así los datos del apoderado, ya que es una funcionalidad que estará disponible en las entregas siguientes. También se pueden eliminar los alumnos, lo que provoca a su vez que se elimine del sistema al apoderado que tenga asociado.
+    \Shell{Menú alumnos}{contents/code/salida8.txt}
+
     \item Asignar nuevo profesor jefe a curso: Se puede modificar un curso, asignándole un nuevo profesor jefe y eliminando al anterior.
     \item Eliminar curso: El programa permite la eliminación completa de un curso, la que provocará también la eliminación de los datos del profesor, alumnos, y por consiguiente, de los apoderados.
+    \Shell{Menú cursos}{contents/code/salida9.txt}
 \end{itemize}
 
 \subsection{Se debe generar un reporte en archivo txt que considere mostrar datos de las 2 colecciones anidadas (ej: csv)}
 
-El programa permite la generación de reportes en formato CSV (separados por comas). Los reportes que se pueden generar son los siguientes:
+El programa permite la generación de reportes en formato CSV (separados por comas), tanto en la interfaz de linea de comandos, como en la interfaz gráfica. Los reportes que se pueden generar son los siguientes:
 
 \begin{itemize}
     \item Lista del curso: Este archivo CSV contendrá los datos de los alumnos de un curso en específico, entregado por el usuario.
     \item Tabla de cursos: Este archivo CSV contendrá los datos generales de todos los cursos a los que el programa tiene acceso. Esta tabla, además de mostrar los datos del curso mismo, muestra datos generales del profesor jefe a cargo del mismo.
 \end{itemize}
+
+\Shell{Menú reportes}{contents/code/salida10.txt}
+
+\begin{figure}[h]
+    \centering
+    \frame{\includegraphics[width=0.95\textwidth]{contents/img/gui/img14}}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+        \centering
+        \frame{\includegraphics[width=0.95\linewidth]{contents/img/gui/img15}}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \centering
+        \frame{\includegraphics[width=0.95\linewidth]{contents/img/gui/img17}}
+    \end{subfigure}
+\end{figure}
+
+\clearpage
 
 \subsection{El código fuente debe estar bien modularizado de acuerdo a lo descrito en el informe además de seguir las buenas prácticas de documentación interna y legibilidad}
 
@@ -29,10 +53,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et sem luctus, fi
 
 \subsection{Todas las funcionalidades pueden ser implementadas mediante consola}
 
-\subsubsection*{Opcional: La implementación de una o más interfaces gráficas de usuario, con la inclusión de ventanas con componentes AWT, SWING, JAVAFXu otro}
-\addcontentsline{toc}{subsubsection}{Opcional: La implementación de una o más interfaces gráficas de usuario, con la inclusión de ventanas con componentes AWT, SWING, JAVAFXu otro}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et sem luctus, finibus mauris eget, euismod arcu. Morbi at mollis risus. Praesent consequat justo tellus, ac pretium urna lacinia quis. Ut sagittis cursus finibus. Morbi pellentesque vulputate tincidunt. Aliquam at pretium tellus, et vehicula velit. Nunc turpis metus, porttitor sit amet aliquam ut, venenatis quis elit. Nam tincidunt venenatis tortor, ac sodales libero varius nec. Donec vestibulum leo a metus rutrum, vitae elementum diam suscipit. Quisque non mauris rutrum, lacinia lectus id, viverra dui. In leo quam, ultrices vitae suscipit quis, porttitor quis turpis. Vestibulum semper ligula sit amet diam scelerisque gravida.
+Todas las funcionalidades planteadas para el sistema fueron implementadas en la interfaz de consola de comandos (CLI). Solo algunas funcionalidades, indicadas más adelantes en este reporte, fueron implementadas a la interfaz gráfica (GUI).
 
 \subsection{Utilizacion de GitHub (Realización de al menos 3 Commit)}
 

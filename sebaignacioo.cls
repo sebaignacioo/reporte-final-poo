@@ -243,6 +243,11 @@ personal LaTeX template.]
   \colorBox{MyBlue}{\faInfo\hspace{0.75em}\textbf{Info} - #1}{#2}
 }
 
+% Info box
+\newcommand{\darkBox}[2]{%
+  \colorBox{DarkGrey}{\faPlay\hspace{0.75em} #1}{#2}
+}
+
 % Warning box
 \newcommand{\warningBox}[2]{%
   \colorBox{MyYellow}{\faExclamation\hspace{0.75em}\textbf{Cuidado!} - #1}{#2}

@@ -1,0 +1,16 @@
+Menú asistencia
+  -> (  1  ) - Alumno con mejor asistencia
+               Permite ver el alumno con mejor asistencia del año
+  -> (  2  ) - Registrar asistencia
+               Permite registrar la asistencia de un curso un día determinado
+  -> (  3  ) - Alumnos entre % y % de asistencia
+               Permite ver los alumnos con los porcentajes de asistencia especificados
+  -> (  4  ) - Alumno con mas retiros
+               Permite ver el alumno con mas retiros en el año
+  -> (  5  ) - Alumnos entre % y % de retiros
+               Permite ver los alumnos con los porcentajes de retiros especificados
+  -> (  9  ) - Salir
+               Salir de la aplicación
+  -> (  0  ) - Volver al menú de administración
+               Salir de la gestión de cursos
+Ingrese su opción (numérica): 

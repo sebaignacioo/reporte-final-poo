@@ -46,3 +46,5 @@ Los métodos \mintinline{java}{getAlumnos} de la interfaz \textbf{AlumnoData} ob
 \subsection{Diseño conceptual y codificación de al menos 1 clase mapa del JCF}
 
 Cada \textbf{Curso} debe manejar un número indeterminado de \textbf{Alumnos}, y su recorrido debe ser lo más eficiente posible a la hora de buscar un alumno específico, dado que el programa debe manejar los registros de asistencia, que están anidados en cada alumno, y a su vez los alumnos están anidados en cada curso. Es por esto que se decidió por almacenar los alumnos en cada curso como \textbf{HashMap}, en donde la clave será el RUT del alumno, y el valor contendrá al alumno en sí.
+
+\javaFileBox{Clase Curso}{contents/code/java1.java}
