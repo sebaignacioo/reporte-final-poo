@@ -17,6 +17,6 @@
 
 ## Proyecto principal
 
-Para acceder al proyecto principal del que se basa este reporte, haga click [aquí](../proyecto-poo).
+Para acceder al proyecto principal del que se basa este reporte, haga click [aquí](../../../proyecto-poo).
 
 [latex-badge]: https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white
