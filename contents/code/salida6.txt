@@ -1,0 +1,29 @@
+                                                       Cursos
+---------------------------------------------------------------------------------------------------------------------
+| Curso | Nivel | Paralelo | Nombre profesor jefe          | Email profesor jefe           | Telefono profesor jefe | 
+---------------------------------------------------------------------------------------------------------------------
+| 1BA   | 1     | A        | Shanta Hilll Senger           | sue.casper@hotmail.com        | 987659326              | 
+| 1BB   | 1     | B        | Elden Kautzer Abshire         | maxima.tremblay@hotmail.com   | 978042546              | 
+| 2BA   | 2     | A        | Grant Cartwright Ferry        | jaymie.anderson@gmail.com     | 947869804              | 
+| 2BB   | 2     | B        | Claudette Baumbach Roob       | lasonya.swaniawski@yahoo.com  | 954534919              | 
+| 3BA   | 3     | A        | Alex Parisian Hintz           | darell.lueilwitz@hotmail.com  | 952017013              | 
+| 3BB   | 3     | B        | Darrel Nicolas Cole           | milagros.emmerich@hotmail.com | 948755395              | 
+| 4BA   | 4     | A        | Tamisha Volkman Fadel         | joaquin.stiedemann@gmail.com  | 985662322              | 
+| 4BB   | 4     | B        | Jacques Wolff Bednar          | donella.lockman@gmail.com     | 984890419              | 
+| 5BA   | 5     | A        | Marylee Donnelly Bernier      | evelin.abshire@gmail.com      | 990485383              | 
+| 5BB   | 5     | B        | Inge Fay McCullough           | sharda.fahey@yahoo.com        | 991602692              | 
+| 6BA   | 6     | A        | Bruce Kulas Goodwin           | george.champlin@gmail.com     | 975853419              | 
+| 6BB   | 6     | B        | Marcelle Emmerich Williamson  | nickolas.pouros@gmail.com     | 961721076              | 
+| 7BA   | 7     | A        | Kory O'Kon Brakus             | thanh.waters@hotmail.com      | 974036963              | 
+| 7BB   | 7     | B        | Elease White Jerde            | elli.mayer@gmail.com          | 988854022              | 
+| 8BA   | 8     | A        | Kandace Hahn Hammes           | edmond.corwin@yahoo.com       | 950970290              | 
+| 8BB   | 8     | B        | Loyce Krajcik Jakubowski      | jenine.keebler@hotmail.com    | 943740407              | 
+| 1MA   | 9     | A        | Teodoro Pfeffer Ankunding     | lottie.weissnat@gmail.com     | 993288595              | 
+| 1MB   | 9     | B        | Denita Kuvalis Heller         | shila.morissette@yahoo.com    | 969915007              | 
+| 2MA   | 10    | A        | Raphael Walter Stoltenberg    | hyacinth.senger@gmail.com     | 984581430              | 
+| 2MB   | 10    | B        | Elton Beatty McLaughlin       | joya.barrows@gmail.com        | 941208950              | 
+| 3MA   | 11    | A        | Lacy Cassin Bauch             | harlan.mitchell@hotmail.com   | 975709937              | 
+| 3MB   | 11    | B        | Dede Goodwin Schuppe          | ryan.hand@gmail.com           | 966145453              | 
+| 4MA   | 12    | A        | Noelia Hagenes Swift          | renate.swaniawski@hotmail.com | 941278587              | 
+| 4MB   | 12    | B        | Leif Zulauf Boyle             | celina.keeling@yahoo.com      | 973953363              | 
+---------------------------------------------------------------------------------------------------------------------

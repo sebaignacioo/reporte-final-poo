@@ -1,0 +1,12 @@
+Menú administracion
+  -> (  1  ) - Gestionar cursos
+               Permite gestionar los datos de los cursos
+  -> (  2  ) - Gestionar alumnos
+               Permite gestionar los datos de los alumnos
+  -> (  3  ) - Gestionar asistencia
+               Permite gestionar la asistencia de los alumnos
+  -> (  9  ) - Salir
+               Salir de la aplicación
+  -> (  0  ) - Volver al menú principal
+               Salir de la administración del colegio
+Ingrese su opción (numérica): 

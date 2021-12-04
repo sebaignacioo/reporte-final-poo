@@ -1,0 +1,45 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%% --------------------------- %%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%% | Personal LaTeX template | %%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%% | by Sebastian Garcia     | %%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%% | @sebaignacioo           | %%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%% |                         | %%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%% |          2021           | %%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%% --------------------------- %%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Se define la clase y parametros principales
+\documentclass[11pt, letterpaper, table, xcdraw]{sebaignacioo}
+
+% Usando paquete para importar archivos
+\usepackage{import}
+% Importando estilos
+\usepackage{styles}
+
+\begin{document}
+  
+  % Header
+  \import{common/}{header.tex}
+  % Contenidos
+  \tableofcontents
+  \creditos
+  \clearpage
+  % Entregas
+  \import{contents/entregas-parciales/}{ep1.tex}
+  \clearpage
+  \import{contents/entregas-parciales/}{ep2.tex}
+  \clearpage
+  \import{contents/entregas-parciales/}{ep3.tex}
+  \clearpage
+  \import{contents/entregas/}{a.tex}
+  \clearpage
+  \import{contents/entregas-parciales/}{ep4.tex}
+  \clearpage
+  \import{contents/entregas/}{b.tex}
+  \clearpage
+  \import{contents/entregas/}{final.tex}
+  \clearpage
+  % Consideraciones finales
+  \import{contents/consideraciones/}{consideraciones.tex}
+
+\end{document}

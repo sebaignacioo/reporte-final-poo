@@ -1,0 +1,9 @@
+Ingrese el nivel del curso(número de 1 a 12): 5
+Ingrese el paralelo del curso(caracter): C
+Ingrese el RUT del profesor jefe(RUT): 12345678-9
+Ingrese los nombres del profesor jefe(texto): Profesor Jefe
+Ingrese el apellido paterno del profesor jefe(texto): Ejemplo
+Ingrese el apellido materno del profesor jefe(texto): Ejemplo
+Ingrese la asignatura del profesor jefe(texto): Asignatura de ejemplo
+Ingrese el email del profesor jefe(texto): ejemplo@ejemplo.com
+Ingrese el teléfono del profesor jefe(texto): 912345678

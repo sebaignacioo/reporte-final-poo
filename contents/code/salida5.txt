@@ -1,0 +1,12 @@
+Ingrese el nivel del curso(número de 1 a 12): 12
+Ingrese el paralelo del curso(caracter): B
+Ingrese el RUT del alumno(RUT): 12345678-9
+Ingrese los nombres del alumno(texto): Alumno De
+Ingrese el apellido paterno del alumno(texto): Ejemplo
+Ingrese el apellido materno del alumno(texto): Ejemplo
+Ingrese el RUT del apoderado(RUT): 91234567-8
+Ingrese los nombres del apoderado(texto): Apoderado De
+Ingrese el apellido paterno del apoderado(texto): Ejemplo
+Ingrese el apellido materno del apoderado(texto): Ejemplo
+Ingrese el email del apoderado(texto): apoderado@ejemplo.com
+Ingrese el teléfono del apoderado(texto): 987654321

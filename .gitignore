@@ -1,0 +1,14 @@
+# General ignores
+**/_minted-*
+**/._*
+*.code-workspace
+*.vscode
+
+# pdfTex compilation files
+*.aux
+*.log
+*.synctex.gz
+*.toc
+*.pdf
+*.out
+*.xmpi

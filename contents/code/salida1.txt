@@ -1,0 +1,10 @@
+Menú principal
+  -> (  1  ) - Administrar colegio
+               Permite gestionar los cursos, alumnos, profesores y asistencia
+  -> (  2  ) - Generar reportes
+               Permite generar reportes con los datos del sistema
+  -> (  3  ) - Gráficos (próximamente)
+               Permite obtener gráficos sobre los datos del sistema
+  -> (  0  ) - Salir
+               Salir de la aplicación
+Ingrese su opción (numérica): 
