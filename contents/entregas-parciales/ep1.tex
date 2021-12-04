@@ -2,11 +2,9 @@
 
 \subsection{Realizar un análisis de los datos a utilizar y principales funcionalidades a  implementar que dan sentido a la realización del proyecto}
 
-La problemática a abordar en este proyecto es la necesidad que tienen los colegios de llevar un registro de asistencia de sus estudiantes para cada año escolar, y para ello, la principal información que deberemos manejar son los estudiantes y los cursos. Los cursos se dividirán en diferentes niveles y cada nivel subdividirá en paralelos, cada uno de estos contará con la información del profesor a cargo de este curso y la lista de alumnos correspondiente.\\
+La problemática a abordar en este proyecto es la necesidad que tienen los colegios de llevar un registro de asistencia de sus estudiantes para cada año escolar, y para ello, la principal información que deberemos manejar son los \textbf{estudiantes} y los \textbf{cursos}. Los cursos se dividirán en diferentes niveles y cada nivel subdividirá en paralelos, cada uno de estos contará con la información del profesor a cargo de este curso y la lista de alumnos correspondiente.\\
 
-Los alumnos contarán con información básica de ellos (nombre, rut, apellido, etc.) y cada uno contará con su registro de asistencia correspondiente al año escolar.\\
-
-Con esto buscamos que se generen archivos que muestren la lista de estudiantes de cada curso y la asistencia de estos.\\
+Los alumnos contarán con información básica de ellos (nombre, rut, apellido, etc.) y cada uno contará con su registro de asistencia correspondiente al año escolar, con esto buscamos que se generen archivos que muestren la lista de estudiantes de cada curso y la asistencia de estos.\\
 
 \textbf{Funcionalidades principales:}
 \begin{itemize}
@@ -34,7 +32,8 @@ Con esto buscamos que se generen archivos que muestren la lista de estudiantes d
 	
 \textbf{Manejo de datos:}
 \begin{itemize}
-    \item En principio, los datos relevantes para los procesos serán almacenados en un archivo de texto plano (CSV), el que contendrá las funcionalidades necesarias para agregar, modificar, listar o eliminar datos de él.
+    \item El software desarrollado tiene la capacidad de conectarse tanto a una base de datos MySQL (o MariaDB), y también de trabajar con datos almacenados de forma local a través de un archivo CSV, desarrollando con ello todas las funcionalidades necesarias para leer, insertar, actualizar o eliminar datos desde cualquiera sea el origen de datos.\\
+    Para trabajar con la base de datos, el software incorpora las configuraciones necesarias para ejecutar, a través de \textbf{docker}, una base de datos en MySQL con los datos iniciales, y se conecta a ella de forma predeterminada, utilizando las credenciales incorporadas en el archivo \textbf{.env}, que por razones de seguridad, no está incluído en el repositorio de GitHub, pero sí en la entrega final.
     \item Para efecto de trabajar con datos iniciales, se creó una clase Fakedata que incluye una librería externa (Faker). Esta clase permite crear datos iniciales aleatorios, y los guarda en los ficheros CSV respectivos, utilizando la clase Datafile de manejo de archivos.
 \end{itemize}
 
