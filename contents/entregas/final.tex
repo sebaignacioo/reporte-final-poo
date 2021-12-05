@@ -95,7 +95,9 @@ Ambas clases contienen el método \mintinline{java}{mostrarMensajeError()}, que 
 
 \subsection{Aplicación del patrón de diseño Strategy (Estrategia)}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et sem luctus, finibus mauris eget, euismod arcu. Morbi at mollis risus. Praesent consequat justo tellus, ac pretium urna lacinia quis. Ut sagittis cursus finibus. Morbi pellentesque vulputate tincidunt. Aliquam at pretium tellus, et vehicula velit. Nunc turpis metus, porttitor sit amet aliquam ut, venenatis quis elit. Nam tincidunt venenatis tortor, ac sodales libero varius nec. Donec vestibulum leo a metus rutrum, vitae elementum diam suscipit. Quisque non mauris rutrum, lacinia lectus id, viverra dui. In leo quam, ultrices vitae suscipit quis, porttitor quis turpis. Vestibulum semper ligula sit amet diam scelerisque gravida.
+En el desarrollo de la aplicación, se utilizó el patrón de diseño \textbf{Strategy} para gestionar el origen de datos del software. El uso de las interfaces presentes en el paquete \textbf{Data} contiene los métodos necesarios para obtener los datos a partir de cualquiera sea el origen de estos, lo que es aprovechado por las clases \textbf{Datafile} y \textbf{Database}, las que obtienen los datos desde archivo CSV y base de datos MySQL, respectivamente.
+
+\clearpage
 
 \subsubsection*{Opcional: Reemplazar los datos iniciales en el código por una conexión con base de datos local (MySQL), archivo de texto CSVo Excel, para la persistencia de datos}
 \addcontentsline{toc}{subsubsection}{Opcional: Reemplazar los datos iniciales en el código por una conexión con base de datos local (MySQL), archivo de texto CSVo Excel, para la persistencia de datos}
@@ -109,14 +111,14 @@ Para la preservación de los datos poseemos tanto una carpeta en el proyecto (\t
     \label{fig:img12}
 \end{figure}
 
-\clearpage
-
 \begin{figure}[h]
     \centering
-    \includegraphics[width=1\textwidth]{contents/img/img13}
+    \includegraphics[width=0.85\textwidth]{contents/img/img13}
     \caption{Modelo de datos BD}
     \label{fig:img13}
 \end{figure}
+
+\clearpage
 
 \subsubsection*{Opcional: Considerar la implementación del patrón Modelo-Vista-Controlador (MVC) en la arquitectura del sistema}
 \addcontentsline{toc}{subsubsection}{Opcional: Considerar la implementación del patrón Modelo-Vista-Controlador (MVC) en la arquitectura del sistema}

@@ -1,54 +1,47 @@
-\setcounter{section}{0}
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\setcounter{section}{7}
 \setcounter{subsection}{0}
-\section*{Consideraciones generales}
-\addcontentsline{toc}{section}{Consideraciones generales}
+\section{Consideraciones generales}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et sem luctus, finibus mauris eget, euismod arcu. Morbi at mollis risus. Praesent consequat justo tellus, ac pretium urna lacinia quis. Ut sagittis cursus finibus. Morbi pellentesque vulputate tincidunt. Aliquam at pretium tellus, et vehicula velit. Nunc turpis metus, porttitor sit amet aliquam ut, venenatis quis elit. Nam tincidunt venenatis tortor, ac sodales libero varius nec. Donec vestibulum leo a metus rutrum, vitae elementum diam suscipit. Quisque non mauris rutrum, lacinia lectus id, viverra dui. In leo quam, ultrices vitae suscipit quis, porttitor quis turpis. Vestibulum semper ligula sit amet diam scelerisque gravida.
+\subsection{Desarrollo de la aplicación}
+\label{subsec:desarrolloapp}
 
-Cras vestibulum, orci id rhoncus facilisis, ipsum erat volutpat elit, eu elementum ligula velit eget ex. Fusce in felis massa. Aliquam commodo augue ac tellus fringilla interdum. Curabitur ac magna orci. Cras dolor turpis, gravida sed semper non, dictum ut eros. Sed vehicula urna at fringilla volutpat. Curabitur a tellus nec enim venenatis cursus vel a purus. Pellentesque gravida hendrerit urna, quis sodales erat faucibus pharetra.
+Para el desarrollo de esta aplicación, se utilizaron los IDE de desarrollo:
+\begin{itemize}
+    \item \textbf{IntelliJ Idea:} IDE de desarrollo general de la aplicación.
+    \item \textbf{Apache Netbeans:} IDE de desarrollo para diseño de ventanas gráficas (Swing).
+\end{itemize}
 
-Nunc erat mauris, finibus vitae velit a, fermentum lobortis arcu. Nunc luctus viverra augue id tincidunt. Pellentesque vitae libero nec erat pharetra dapibus eget vel nunc. Mauris tempus laoreet lorem non pretium. Nullam a neque condimentum, lacinia sapien sit amet, elementum urna. Mauris ac metus nec neque vulputate volutpat nec id nunc. Nulla augue leo, finibus eget consectetur at, imperdiet at magna.
+La versión del JDK de java utilizado es la 1.8 (\faJava \textbf{Java 8}), y también se utilizó \faDocker \textbf{Docker} para la generación de una instancia para correr la base de datos \faDatabase MySQL, junto con PhpMyAdmin para la administración de la misma.
 
-\subsection{Bla bla bla}
-\label{subsec:blablabla}
-Nullam tincidunt mollis odio et volutpat. In vel velit dui. Phasellus pulvinar venenatis lorem, quis volutpat risus euismod sed. Fusce at odio vel nunc faucibus vulputate vitae vitae tortor. Phasellus rhoncus aliquam lectus, et cursus ipsum interdum sed. Mauris et nisl non diam tincidunt sagittis. Maecenas ultrices nunc nec tellus commodo, non interdum augue laoreet. Nullam auctor lacus sed hendrerit tempor. Aliquam nec luctus orci, eu varius eros. Nam sit amet lorem id nisi ultricies rutrum vitae ac nibh. Curabitur ultrices tortor non pulvinar placerat.
+\subsubsection{Codificación y documentación}
+\label{subsubsec:codydoc}
+En la codificación de la solución se siguieron las buenas prácticas de programación, modularización, principios de OO y encapsulamiento. Además, a medida que se generaban nuevas lineas de código, se fue documentando de forma inmediata y generados los \textbf{Javadocs} correspondientes para cada una de las entregas. Aprovechando el hosting gratuito otorgado por \faGithub \textbf{Github Pages}, los Javadocs generados son accesibles a través {\color{MyGreen}\href{https://sebaignacioo.github.io/proyecto-poo/}{de este link.}}
 
-Nulla fermentum efficitur nulla at blandit. Donec dignissim malesuada sapien ac tempus. Quisque hendrerit ipsum eget interdum faucibus. Suspendisse odio eros, dapibus sit amet purus id, vestibulum commodo nunc. Proin placerat augue nibh, vitae semper diam varius vel. Nulla pretium felis et lacus pellentesque mollis. Ut sodales orci id libero pretium commodo. Pellentesque vitae urna vel tellus ullamcorper volutpat eget et diam.
+\subsubsection{Paquetes de Maven}
+\label{subsubsec:paqmaven}
+En el desarrollo del proyecto se utilizó \textbf{Maven}, lo que permite incorporar librerías de terceros de forma rápida. Las librerías utilizadas para el desarrollo de esta aplicación son las siguientes:
 
-Praesent porta dolor quam, et congue dui aliquet vitae. Phasellus dignissim in nisl vel volutpat. Morbi id turpis quis mi ornare egestas vel sed sem. Duis molestie condimentum ipsum, non tincidunt felis. Praesent rutrum placerat odio a semper. Ut vulputate scelerisque convallis. Curabitur vitae consectetur est. Nunc iaculis tincidunt libero ut varius. Donec elementum vitae erat vitae bibendum. Suspendisse mattis ultricies pharetra. Integer ac urna congue justo commodo varius. Ut vel rutrum eros. In hac habitasse platea dictumst.
+\begin{itemize}
+    \item \textbf{Faker:} Librería que permite la generación de datos de prueba falsos.
+    \item \textbf{MySQLConnector/J:} Librería oficial de MySQL que permite la conexión con la base de datos.
+    \item \textbf{dotenv-java:} Librería para utilizar variables de entorno, para colocar las credenciales de conexión para la base de datos.
+    \item \textbf{jIconFont:} Librería que permite obtener íconos predefinidos, para utilizar en el diseño de la interfaz gráfica.
+    \item \textbf{FlatLaf:} Librería que permite cambiar los estilos visuales (\textbf{LookAndFeel}) predefinidos para Java Swing.
+\end{itemize}
 
-Sed quis sem id est porta ornare vel aliquet lorem. Fusce tincidunt blandit ultrices. Duis ullamcorper, sem nec faucibus viverra, nisi est mattis massa, congue tincidunt ante risus ac lacus. Cras lobortis condimentum turpis at auctor. Nulla facilisi. Proin quis ligula sed tortor placerat tincidunt. Nullam vitae euismod enim. Pellentesque nec risus vel risus congue dapibus. Aenean non nisi at augue volutpat porttitor. Proin ac massa eu dui pulvinar ornare. Curabitur ac tortor sodales, aliquet enim eu, suscipit massa. Nam purus libero, ullamcorper ac sodales et, ullamcorper ut tortor. Maecenas sodales vitae leo sit amet tempor. Suspendisse sodales fermentum pharetra. Praesent at tellus viverra lectus dictum dictum at sit amet massa.
+\subsection{Utilización de GitHub}
+\label{cons:utilizaciongithub}
+Se utilizó \faGithub \textbf{Github} como sistema de control de versiones, lo que facilitó el trabajo en equipo a la hora de codificar la solución. Considerando la entrega final del proyecto, se realizaron 65 commits, repartidos entre las diferentes entregas del proyecto, y subidos por los 3 integrantes del grupo del proyecto.
 
-Vivamus ante nibh, lacinia pharetra tristique in, pharetra sed lacus. Curabitur a pellentesque neque. Nulla venenatis metus ante, sit amet accumsan augue placerat a. Vivamus tristique nunc vitae massa suscipit, vitae eleifend sapien aliquet. Ut laoreet quam quis tellus sagittis mollis ut ut sem. Nam pretium purus lorem, eu hendrerit metus dapibus vitae. Vestibulum auctor sollicitudin risus sed mattis.
+\subsection{Herramientas de utilidad}
+\label{subsec:herramientasutilidad}
+Para facilitar el trabajo en equipo, para este proyecto se utilizaron las siguientes herramientas tecnológicas:
 
-Praesent interdum suscipit consectetur. Morbi a viverra nulla. Nulla sollicitudin est nunc, a tristique dui rutrum ac. In tincidunt massa orci. Vivamus nec ligula luctus, bibendum sapien non, tempus mi. Morbi laoreet vitae eros eu ullamcorper. Nunc vel placerat ante. Fusce nec leo eget est malesuada aliquam. Cras vel massa fringilla, sollicitudin nisi vitae, pharetra nunc. Donec quis sapien quis risus volutpat auctor. Curabitur eget massa elementum, faucibus ex at, viverra nisl.
-
-Nunc nisl nunc, molestie eu libero at, tempor feugiat nisi. Praesent tristique fermentum nulla. In nec consequat magna, a auctor orci. Integer elementum justo a risus dapibus, id tempor dui malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi ipsum lorem, posuere nec maximus ut, tempus vitae tortor. Vestibulum consectetur justo id dui tristique, nec faucibus orci ultrices. Pellentesque ultricies, turpis a laoreet consectetur, risus tellus dictum orci, ut porttitor nulla enim nec est.
-
-Sed ac mi rutrum, mollis urna blandit, volutpat felis. In hac habitasse platea dictumst. Vestibulum sit amet nunc sed sem aliquam interdum. Morbi venenatis molestie odio, et euismod lorem malesuada at. Aenean sed felis et lectus rutrum placerat nec pharetra nibh. Sed auctor volutpat lacus eu molestie. Nulla dui massa, condimentum a odio ut, euismod eleifend metus. Curabitur porttitor quam eu velit pellentesque malesuada.
-
-Phasellus non arcu tristique, maximus dolor eget, tempor enim. Sed vel tincidunt dui. Nam viverra leo a ultrices sagittis. Vestibulum pellentesque semper vulputate. Aenean laoreet interdum lectus, ut pharetra magna varius in. Vivamus vestibulum molestie hendrerit. In eget dignissim ligula. Aliquam elementum, quam a fringilla efficitur, nisi elit malesuada tellus, in rhoncus enim arcu id ex. Sed fringilla diam vel luctus efficitur. Nulla facilisi. Maecenas ac luctus mi.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et sem luctus, finibus mauris eget, euismod arcu. Morbi at mollis risus. Praesent consequat justo tellus, ac pretium urna lacinia quis. Ut sagittis cursus finibus. Morbi pellentesque vulputate tincidunt. Aliquam at pretium tellus, et vehicula velit. Nunc turpis metus, porttitor sit amet aliquam ut, venenatis quis elit. Nam tincidunt venenatis tortor, ac sodales libero varius nec. Donec vestibulum leo a metus rutrum, vitae elementum diam suscipit. Quisque non mauris rutrum, lacinia lectus id, viverra dui. In leo quam, ultrices vitae suscipit quis, porttitor quis turpis. Vestibulum semper ligula sit amet diam scelerisque gravida.
-
-Cras vestibulum, orci id rhoncus facilisis, ipsum erat volutpat elit, eu elementum ligula velit eget ex. Fusce in felis massa. Aliquam commodo augue ac tellus fringilla interdum. Curabitur ac magna orci. Cras dolor turpis, gravida sed semper non, dictum ut eros. Sed vehicula urna at fringilla volutpat. Curabitur a tellus nec enim venenatis cursus vel a purus. Pellentesque gravida hendrerit urna, quis sodales erat faucibus pharetra.
-
-Nunc erat mauris, finibus vitae velit a, fermentum lobortis arcu. Nunc luctus viverra augue id tincidunt. Pellentesque vitae libero nec erat pharetra dapibus eget vel nunc. Mauris tempus laoreet lorem non pretium. Nullam a neque condimentum, lacinia sapien sit amet, elementum urna. Mauris ac metus nec neque vulputate volutpat nec id nunc. Nulla augue leo, finibus eget consectetur at, imperdiet at magna.
-
-Nullam tincidunt mollis odio et volutpat. In vel velit dui. Phasellus pulvinar venenatis lorem, quis volutpat risus euismod sed. Fusce at odio vel nunc faucibus vulputate vitae vitae tortor. Phasellus rhoncus aliquam lectus, et cursus ipsum interdum sed. Mauris et nisl non diam tincidunt sagittis. Maecenas ultrices nunc nec tellus commodo, non interdum augue laoreet. Nullam auctor lacus sed hendrerit tempor. Aliquam nec luctus orci, eu varius eros. Nam sit amet lorem id nisi ultricies rutrum vitae ac nibh. Curabitur ultrices tortor non pulvinar placerat.
-
-Nulla fermentum efficitur nulla at blandit. Donec dignissim malesuada sapien ac tempus. Quisque hendrerit ipsum eget interdum faucibus. Suspendisse odio eros, dapibus sit amet purus id, vestibulum commodo nunc. Proin placerat augue nibh, vitae semper diam varius vel. Nulla pretium felis et lacus pellentesque mollis. Ut sodales orci id libero pretium commodo. Pellentesque vitae urna vel tellus ullamcorper volutpat eget et diam.
-
-Praesent porta dolor quam, et congue dui aliquet vitae. Phasellus dignissim in nisl vel volutpat. Morbi id turpis quis mi ornare egestas vel sed sem. Duis molestie condimentum ipsum, non tincidunt felis. Praesent rutrum placerat odio a semper. Ut vulputate scelerisque convallis. Curabitur vitae consectetur est. Nunc iaculis tincidunt libero ut varius. Donec elementum vitae erat vitae bibendum. Suspendisse mattis ultricies pharetra. Integer ac urna congue justo commodo varius. Ut vel rutrum eros. In hac habitasse platea dictumst.
-
-Sed quis sem id est porta ornare vel aliquet lorem. Fusce tincidunt blandit ultrices. Duis ullamcorper, sem nec faucibus viverra, nisi est mattis massa, congue tincidunt ante risus ac lacus. Cras lobortis condimentum turpis at auctor. Nulla facilisi. Proin quis ligula sed tortor placerat tincidunt. Nullam vitae euismod enim. Pellentesque nec risus vel risus congue dapibus. Aenean non nisi at augue volutpat porttitor. Proin ac massa eu dui pulvinar ornare. Curabitur ac tortor sodales, aliquet enim eu, suscipit massa. Nam purus libero, ullamcorper ac sodales et, ullamcorper ut tortor. Maecenas sodales vitae leo sit amet tempor. Suspendisse sodales fermentum pharetra. Praesent at tellus viverra lectus dictum dictum at sit amet massa.
-
-Vivamus ante nibh, lacinia pharetra tristique in, pharetra sed lacus. Curabitur a pellentesque neque. Nulla venenatis metus ante, sit amet accumsan augue placerat a. Vivamus tristique nunc vitae massa suscipit, vitae eleifend sapien aliquet. Ut laoreet quam quis tellus sagittis mollis ut ut sem. Nam pretium purus lorem, eu hendrerit metus dapibus vitae. Vestibulum auctor sollicitudin risus sed mattis.
-
-Praesent interdum suscipit consectetur. Morbi a viverra nulla. Nulla sollicitudin est nunc, a tristique dui rutrum ac. In tincidunt massa orci. Vivamus nec ligula luctus, bibendum sapien non, tempus mi. Morbi laoreet vitae eros eu ullamcorper. Nunc vel placerat ante. Fusce nec leo eget est malesuada aliquam. Cras vel massa fringilla, sollicitudin nisi vitae, pharetra nunc. Donec quis sapien quis risus volutpat auctor. Curabitur eget massa elementum, faucibus ex at, viverra nisl.
-
-Nunc nisl nunc, molestie eu libero at, tempor feugiat nisi. Praesent tristique fermentum nulla. In nec consequat magna, a auctor orci. Integer elementum justo a risus dapibus, id tempor dui malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi ipsum lorem, posuere nec maximus ut, tempus vitae tortor. Vestibulum consectetur justo id dui tristique, nec faucibus orci ultrices. Pellentesque ultricies, turpis a laoreet consectetur, risus tellus dictum orci, ut porttitor nulla enim nec est.
-
-Sed ac mi rutrum, mollis urna blandit, volutpat felis. In hac habitasse platea dictumst. Vestibulum sit amet nunc sed sem aliquam interdum. Morbi venenatis molestie odio, et euismod lorem malesuada at. Aenean sed felis et lectus rutrum placerat nec pharetra nibh. Sed auctor volutpat lacus eu molestie. Nulla dui massa, condimentum a odio ut, euismod eleifend metus. Curabitur porttitor quam eu velit pellentesque malesuada.
-
-Phasellus non arcu tristique, maximus dolor eget, tempor enim. Sed vel tincidunt dui. Nam viverra leo a ultrices sagittis. Vestibulum pellentesque semper vulputate. Aenean laoreet interdum lectus, ut pharetra magna varius in. Vivamus vestibulum molestie hendrerit. In eget dignissim ligula. Aliquam elementum, quam a fringilla efficitur, nisi elit malesuada tellus, in rhoncus enim arcu id ex. Sed fringilla diam vel luctus efficitur. Nulla facilisi. Maecenas ac luctus mi.
+\begin{itemize}
+    \item \faGithub \textbf{GitHub:} Herramienta para control de versiones. El uso de ramas, en conjunto con el IDE IntelliJ Idea, permitió trabajar en conjunto con el código.
+    \item \faTrello \textbf{Trello:} Herramienta para gestión de tiempo y plazos de entrega.
+    \item \faDiscord \textbf{Discord:} Herramienta de comunicación para reuniones y juntas de avance.
+    \item \faGoogle \textbf{Suite de Google:} Herramientas online para edición de documentos de forma colaborativa.
+\end{itemize}
