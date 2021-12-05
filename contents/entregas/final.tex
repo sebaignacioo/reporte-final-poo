@@ -6,11 +6,92 @@
 \setcounter{subsection}{1}
 \subsection{Implementar el manejo de excepciones capturando errores potenciales específicos mediante Try-catch}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et sem luctus, finibus mauris eget, euismod arcu. Morbi at mollis risus. Praesent consequat justo tellus, ac pretium urna lacinia quis. Ut sagittis cursus finibus. Morbi pellentesque vulputate tincidunt. Aliquam at pretium tellus, et vehicula velit. Nunc turpis metus, porttitor sit amet aliquam ut, venenatis quis elit. Nam tincidunt venenatis tortor, ac sodales libero varius nec. Donec vestibulum leo a metus rutrum, vitae elementum diam suscipit. Quisque non mauris rutrum, lacinia lectus id, viverra dui. In leo quam, ultrices vitae suscipit quis, porttitor quis turpis. Vestibulum semper ligula sit amet diam scelerisque gravida.
+Se utiliza en reiteradas ocasiones la captura de excepciones que puedan surgir en el programa mediante los bloques try-catch que se detallan a continuación:
+
+\begin{itemize}
+    \item Excepciones de conexión con base de datos SQL (\textbf{SQLException})
+    \begin{itemize}
+        \item \mintinline{java}{public Map<String, Alumno> getAlumnos()}
+        \item \mintinline{java}{public Map<String, Alumno> getAlumnos(int nivel)}
+        \item \mintinline{java}{public Map<String, Alumno> getAlumnos(int nivel, char paralelo)}
+        \item \mintinline{java}{public Alumno getAlumno(String rut)}
+        \item \mintinline{java}{public RegistroAsistencia get(IDAsistencia id)}
+        \item \mintinline{java}{public RegistroAsistencia getRegistroAsistencia(IDAsistencia id)}
+        \item \mintinline{java}{public RegistroAsistencia getRegistroAsistencia(Date fecha)}
+        \item \mintinline{java}{public RegistroAsistencia getRegistroAsistencia(String rutAlumno)}
+        \item \mintinline{java}{public ResultSet getQuery(String sql)}
+        \item \mintinline{java}{public ResultSet updateQuery(String sql)}
+    \end{itemize}
+\end{itemize}
+
+Se utilizan los bloques try-catch ya que en cada uno de ellos existe la posibilidad de una excepcion con la conexión o las consultas a la base de datos generando un \textbf{SQLException} o un \textbf{SQLTimeoutException}, además los métodos getter utilizados dentro de estos métodos también podrían generar un \textbf{SQLException} o un \textbf{SQLFeatureNotSupportedException}.\\
+
+En cuanto a los siguientes métodos, se utilizan bloques try-catch ya que al imprimir los distintos tipos de menú se pueden generar excepciones de tipo IOException en operaciones I/O fallidas o interrumpidas.
+
+\begin{itemize}
+    \item Excepciones de entrada/salida de datos por consola (\textbf{IOException})
+    \begin{itemize}
+        \item \mintinline{java}{public void menuAdministracion()}
+        \item \mintinline{java}{public void menu(String menu)}
+        \item \mintinline{java}{public void menuOpt(int opt)}
+    \end{itemize}
+\end{itemize}
+
+Los siguientes son métodos que manejan ficheros y se pueden generar excepciones de IOException en la lectura o escritura de un fichero en operaciones I/O fallidas o interrumpidas.
+
+\begin{itemize}
+    \item Excepciones de entrada/salida de datos por ficheros (\textbf{IOException})
+    \begin{itemize}
+        \item \mintinline{java}{public Datafile(String type)}
+        \item \mintinline{java}{public String getData()}
+        \item \mintinline{java}{public void insertLine(String line)}
+        \item \mintinline{java}{public void updateLine(String oldLine, String newLine)}
+        \item \mintinline{java}{public void deleteLine(String line)}
+        \item \mintinline{java}{public void clearFile()}
+        \item \mintinline{java}{public String getFilePath()}
+        \item \mintinline{java}{public void repListaCursoMenuItemActionPerformed(java.awt.event.ActionEvent evt)}
+    \end{itemize}
+\end{itemize}
+
+Luego se pueden producir una excepcion de IOException o FontFormatException ya que se maneja una fuente personalizada, además al cargar el look and feel del Java Swing Application se pueden generar excepciones de ClassNotFoundException si la clase LookAndFeel no ha podido ser encontrada, InstantiationException si no se ha podido crear una nueva instancia de la clase, IllegalAccessException si la clase o el inicializador no son accesibles y javax.swing.UnsupportedLookAndFeelException si lnf.isSupportedLookAndFeel() es false (Una excepción que indica que las clases de gestión de apariencia solicitadas no están presentes en el sistema del usuario).
+
+\begin{itemize}
+    \item Excepciones del método main
+    \begin{itemize}
+        \item \mintinline{java}{public static void main(String args[])}
+    \end{itemize}
+\end{itemize}
+
+Por último, las siguientes excepciones fueron desarrolladas para la solución en específico, y cumplen el propósito de: Generar un error en caso que la conexión con la base de datos no se pueda realizar, y generar un error si el usuario ingresa un dato no numérico en un campo que así lo exige.
+
+\begin{itemize}
+    \item Excepciones de formato numérico (\textbf{InvalidNumberException})
+    \begin{itemize}
+        \item \mintinline{java}{public void telefonoApTextFieldFocusLost(java.awt.event.FocusEvent evt)}
+    \end{itemize}
+    \item Excepciones de conexión con BD (\textbf{DatabaseException})
+    \begin{itemize}
+        \item \mintinline{java}{public Connection connect()}
+    \end{itemize}
+\end{itemize}
 
 \subsection{Crear 2 clases que extiendan de una Excepción y que se utilicen en el programa}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et sem luctus, finibus mauris eget, euismod arcu. Morbi at mollis risus. Praesent consequat justo tellus, ac pretium urna lacinia quis. Ut sagittis cursus finibus. Morbi pellentesque vulputate tincidunt. Aliquam at pretium tellus, et vehicula velit. Nunc turpis metus, porttitor sit amet aliquam ut, venenatis quis elit. Nam tincidunt venenatis tortor, ac sodales libero varius nec. Donec vestibulum leo a metus rutrum, vitae elementum diam suscipit. Quisque non mauris rutrum, lacinia lectus id, viverra dui. In leo quam, ultrices vitae suscipit quis, porttitor quis turpis. Vestibulum semper ligula sit amet diam scelerisque gravida.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{contents/img/img15}
+    \caption{Clases que extieden a Exception}
+    \label{fig:img15}
+\end{figure}
+
+Según las funcionalidades incorporadas en el desarrollo de la solución, se hizo pertinente generar 2 clases que extienden a \textbf{Exception}:
+
+\begin{itemize}
+    \item \mintinline{java}{public class InvalidNumberException extends NumberFormatException}: Esta excepción permite capturar errores al intentar transformar una cadena de texto (ingresada por el usuario), a un típo de dato numérico (utilizando \mintinline{java}{Integer.parseInt()})
+    \item \mintinline{java}{public class DatabaseException extends SQLException}: Esta excepción permite capturar errores al intentar conectarse a la base de datos MySQL
+\end{itemize}
+
+Ambas clases contienen el método \mintinline{java}{mostrarMensajeError()}, que mostrará al usuario un mensaje de error, indicandolo.
 
 \subsection{Aplicación del patrón de diseño Strategy (Estrategia)}
 
